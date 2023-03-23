@@ -101,7 +101,7 @@ export default function Scene({ ...props }) {
         />
         <group
           name="Macbook Pro M1 Max 14 Inch"
-          position={[40, 150.34, 283.42]}
+          position={[40, 180.34, 283.42]}
           rotation={[-3.02, 0, 3.14]}
           scale={0.25}
         >
