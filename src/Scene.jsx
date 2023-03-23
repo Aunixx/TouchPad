@@ -82,7 +82,7 @@ export default function Scene({ ...props }) {
       <Html>
         <div className="screen" ref={screenref}>
           <div className="screenWrapper">
-            <span className="" ref={cursorref}>
+            <span className="cursor" ref={cursorref}>
               <RxCursorArrow />
             </span>
           </div>
