@@ -9,6 +9,9 @@ body,
   height: 100%;
 
 }
+canvas{
+  overscroll-behavior: none;
+}
 .trackpad {
 overscroll-behavior-y:contain;
 overscroll-behavior:contain;
