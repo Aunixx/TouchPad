@@ -9,6 +9,9 @@ body,
   height: 100%;
 
 }
+html{
+  overscroll-behavior:contain;
+ }
 canvas{
   overscroll-behavior: none;
 }
