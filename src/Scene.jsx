@@ -279,8 +279,8 @@ export default function Scene({ ...props }) {
           </group>
           <group
             name="base"
-            position={[-56.34, -457.52, -546.11]}
-            rotation={[0, 0, 0]}
+            position={[-56.34, -600, -546.11]}
+            rotation={[-0.25, 0, 0]}
             scale={[1, 1, 0.95]}
           >
             <mesh
