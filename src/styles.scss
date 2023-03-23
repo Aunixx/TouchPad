@@ -1,26 +1,25 @@
 body {
-    margin: 0;
-    overscroll-behavior-y:none;
-    overflow-y: hidden;
-    touch-action:none;
+  margin: 0;
+  overscroll-behavior-y: none;
+  overflow-y: hidden;
+  touch-action: none;
 }
 html,
 body,
 #root {
   height: 100%;
-
 }
-html{
-  overscroll-behavior:contain;
-  overflow:hidden;
-  touch-action:none;
- }
-canvas{
+html {
+  overscroll-behavior: contain;
+  overflow: hidden;
+  touch-action: none;
+}
+canvas {
   overscroll-behavior: none;
 }
 .trackpad {
-overscroll-behavior-y:contain;
-overscroll-behavior:contain;
+  overscroll-behavior-y: contain;
+  overscroll-behavior: contain;
   height: 200px;
   width: 350px;
   position: fixed;
@@ -44,10 +43,15 @@ overscroll-behavior:contain;
     position: relative;
     width: 100%;
     height: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+    }
     .cursor {
       position: absolute;
       top: 0;
       left: 0;
+      z-index: 999;
       svg {
         width: 0.65em;
         height: 0.65em;

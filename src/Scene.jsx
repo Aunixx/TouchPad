@@ -6,6 +6,7 @@ import useSpline from "@splinetool/r3f-spline";
 import { Html, OrthographicCamera } from "@react-three/drei";
 import { useEffect, useRef, useState } from "react";
 import { RxCursorArrow } from "react-icons/rx";
+import screenshot from "./ss.png";
 
 export default function Scene({ ...props }) {
   const { nodes, materials } = useSpline(
@@ -44,7 +45,6 @@ export default function Scene({ ...props }) {
         cursorPositionX = touchData[0].x;
         touchInitialPosY = e.touches[0].clientY;
         cursorPositionY = touchData[1].y;
-        console.log(touchData);
       }
     });
     document.addEventListener("touchmove", (e) => {
@@ -53,20 +53,11 @@ export default function Scene({ ...props }) {
         const newPossition = getNumericValue(cursorref.current.style.left);
         positionX = e.touches[0].clientX - touchInitialPosX;
         cursorref.current.style.left = `${cursorPositionX + positionX}px`;
-
-        // cursorPositionX = touchData[0].x + positionX;
-
-        // console.log("x: ", cursorPositionX, " initial: ", cursorPositionY);
         let positionY = getNumericValue(cursorref.current.style.left);
         positionY = e.touches[0].clientY - touchInitialPosY;
-        // cursorPositionY = touchData[0].x + positionY;
-        // console.log("x: ", cursorPositionX, " y: ", cursorPositionY);
         cursorref.current.style.top = `${cursorPositionY + positionY}px`;
-
-        // cursorref.current.style.top = `${e.touches[0].clientY}px`;
       }
     });
-
     document.addEventListener("touchend", (e) => {
       if (e.target == touchpadRef.current) {
         const positions = [{ x: 0 }, { y: 0 }];
@@ -156,6 +147,7 @@ export default function Scene({ ...props }) {
                   <span className="cursor" ref={cursorref}>
                     <RxCursorArrow />
                   </span>
+                  <img src={screenshot} classname="screenShot" />
                 </div>
               </div>
             </Html>
