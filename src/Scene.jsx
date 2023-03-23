@@ -79,15 +79,6 @@ export default function Scene({ ...props }) {
   }, [touchpadRef]);
   return (
     <>
-      <Html>
-        <div className="screen" ref={screenref}>
-          <div className="screenWrapper">
-            <span className="cursor" ref={cursorref}>
-              <RxCursorArrow />
-            </span>
-          </div>
-        </div>
-      </Html>
       <color attach="background" args={["#7a6c89"]} />
       <group {...props} dispose={null} position={[0, 0, 0]}>
         <mesh
@@ -110,7 +101,7 @@ export default function Scene({ ...props }) {
         />
         <group
           name="Macbook Pro M1 Max 14 Inch"
-          position={[40, 200.34, 283.42]}
+          position={[40, 150.34, 283.42]}
           rotation={[-3.02, 0, 3.14]}
           scale={0.25}
         >
@@ -159,6 +150,15 @@ export default function Scene({ ...props }) {
             rotation={[0.54, 0, 0]}
             scale={1}
           >
+            <Html>
+              <div className="screen" ref={screenref}>
+                <div className="screenWrapper">
+                  <span className="cursor" ref={cursorref}>
+                    <RxCursorArrow />
+                  </span>
+                </div>
+              </div>
+            </Html>
             <group
               name="logo_apple"
               position={[-6.96, 478.11, 16.32]}
