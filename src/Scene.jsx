@@ -147,7 +147,9 @@ export default function Scene({ ...props }) {
                   <span className="cursor" ref={cursorref}>
                     <RxCursorArrow />
                   </span>
-                  <img src={screenshot} classname="screenShot" />
+                  <div className="website-container">
+                    <h1>Sahil E Arwand</h1>
+                  </div>
                 </div>
               </div>
             </Html>
