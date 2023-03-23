@@ -148,8 +148,7 @@ export default function Scene({ ...props }) {
                     <RxCursorArrow />
                   </span>
                   <div className="website-container">
-                    <h1>Minha Farooq</h1>
-                    <h1>Meri Jaaaaan</h1>
+                    <h1>About Me</h1>
                   </div>
                 </div>
               </div>
