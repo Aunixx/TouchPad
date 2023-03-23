@@ -82,7 +82,7 @@ export default function Scene({ ...props }) {
       <Html>
         <div className="screen" ref={screenref}>
           <div className="screenWrapper">
-            <span className="cursor" ref={cursorref}>
+            <span className="" ref={cursorref}>
               <RxCursorArrow />
             </span>
           </div>
@@ -96,7 +96,7 @@ export default function Scene({ ...props }) {
           material={materials["Rectangle 2 Material"]}
           castShadow
           receiveShadow
-          position={[40, 0.5, 0]}
+          position={[40, 50.5, 0]}
         />
         <mesh
           name="Rectangle"
@@ -104,8 +104,8 @@ export default function Scene({ ...props }) {
           material={materials["Rectangle Material"]}
           castShadow
           receiveShadow
-          position={[0, -359.01, 20.52]}
-          rotation={[-1.49, 0, 0]}
+          position={[0, -400.01, 20.52]}
+          rotation={[-1.46, 0, 0]}
           scale={1}
         />
         <group
@@ -650,9 +650,7 @@ export default function Scene({ ...props }) {
               scale={[2.48, 14.81, 2.48]}
             >
               <Html>
-                <div className="trackpad" ref={touchpadRef}>
-                  Hello
-                </div>
+                <div className="trackpad" ref={touchpadRef}></div>
               </Html>
               <mesh
                 name="trackpad_top"
